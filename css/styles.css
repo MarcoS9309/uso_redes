@@ -122,6 +122,41 @@ body {
     width: 100%;
 }
 
+/* Language Toggle */
+.language-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    min-width: 70px;
+}
+
+.lang-btn:hover {
+    background: #3d7dea;
+    transform: translateY(-2px);
+}
+
+.lang-flag {
+    font-size: 1rem;
+}
+
+.lang-text {
+    font-weight: 600;
+}
+
 /* Hamburger menu */
 .hamburger {
     display: none;
@@ -606,6 +641,11 @@ body {
     
     .nav-menu.active {
         left: 0;
+    }
+
+    .language-toggle {
+        margin-top: 1rem;
+        justify-content: center;
     }
     
     .hero .container {

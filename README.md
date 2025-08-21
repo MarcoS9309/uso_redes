@@ -57,9 +57,10 @@ Este repositorio contiene un proyecto de código diseñado para la construcción
 
 - **HTML5**: Estructura semántica
 - **CSS3**: Estilos modernos con CSS Grid y Flexbox
-- **JavaScript ES6+**: Interactividad y animaciones
+- **JavaScript ES6+**: Interactividad, animaciones y sistema de traducciones
 - **Google Fonts**: Tipografía Inter
 - **CSS Variables**: Sistema de colores consistente
+- **LocalStorage**: Persistencia de preferencias de idioma
 
 ## 🎨 Paleta de Colores
 
@@ -164,13 +165,32 @@ Este repositorio contiene un proyecto de código diseñado para la construcción
 - Textos descriptivos
 - Tamaños de fuente legibles
 
+## 🌐 Soporte Multiidioma
+
+El proyecto ahora incluye soporte completo para dos idiomas:
+
+### 🇪🇸 Español (por defecto)
+- Idioma principal del proyecto
+- Todas las funcionalidades disponibles
+
+### 🏴 Quechua
+- Traducción completa y cultural apropiada
+- Preserva todo el contexto educativo
+- Accesible para hablantes de quechua
+
+**Características del sistema de traducción:**
+- Cambio de idioma instantáneo sin recarga
+- Preferencia guardada en navegador
+- Diseño responsivo en ambos idiomas
+- Tooltips bilingües para mejor usabilidad
+
 ## 🔄 Actualizaciones Futuras
 
 - [ ] Más redes sociales (LinkedIn, YouTube, etc.)
 - [ ] Videos educativos embebidos
 - [ ] Quiz interactivo de conocimientos
 - [ ] Modo oscuro
-- [ ] Multiidioma
+- [x] **Multiidioma (Español/Quechua)** ✨
 - [ ] PWA (Progressive Web App)
 
 ## 🤝 Contribuciones

@@ -44,11 +44,17 @@
                     <span class="brand-text">Redes Responsables</span>
                 </div>
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                    <li><a href="#guias" class="nav-link">Guías</a></li>
-                    <li><a href="#consejos" class="nav-link">Consejos</a></li>
-                    <li><a href="#recursos" class="nav-link">Recursos</a></li>
-                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li><a href="#inicio" class="nav-link" data-translate="nav-inicio">Inicio</a></li>
+                    <li><a href="#guias" class="nav-link" data-translate="nav-guias">Guías</a></li>
+                    <li><a href="#consejos" class="nav-link" data-translate="nav-consejos">Consejos</a></li>
+                    <li><a href="#recursos" class="nav-link" data-translate="nav-recursos">Recursos</a></li>
+                    <li><a href="#contacto" class="nav-link" data-translate="nav-contacto">Contacto</a></li>
+                    <li class="language-toggle">
+                        <button id="languageToggle" class="lang-btn" title="Cambiar idioma / Rimay tikray">
+                            <span class="lang-flag">🏴</span>
+                            <span class="lang-text" data-translate="language-toggle">ES</span>
+                        </button>
+                    </li>
                 </ul>
                 <div class="hamburger" id="hamburger">
                     <span></span>
@@ -63,11 +69,11 @@
     <section id="inicio" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Uso Responsable de Redes Sociales</h1>
-                <p class="hero-subtitle">Navega seguro, conecta responsablemente y protege tu privacidad digital</p>
+                <h1 class="hero-title" data-translate="hero-title">Uso Responsable de Redes Sociales</h1>
+                <p class="hero-subtitle" data-translate="hero-subtitle">Navega seguro, conecta responsablemente y protege tu privacidad digital</p>
                 <div class="hero-buttons">
-                    <a href="#guias" class="btn btn-primary">Comenzar Guía</a>
-                    <a href="#consejos" class="btn btn-secondary">Ver Consejos</a>
+                    <a href="#guias" class="btn btn-primary" data-translate="hero-btn-guide">Comenzar Guía</a>
+                    <a href="#consejos" class="btn btn-secondary" data-translate="hero-btn-tips">Ver Consejos</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -88,19 +94,19 @@
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-number">3.8B</div>
-                    <div class="stat-label">Usuarios en redes sociales</div>
+                    <div class="stat-label" data-translate="stat-users">Usuarios en redes sociales</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">65%</div>
-                    <div class="stat-label">No revisa configuraciones de privacidad</div>
+                    <div class="stat-label" data-translate="stat-privacy">No revisa configuraciones de privacidad</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">42%</div>
-                    <div class="stat-label">Ha sido víctima de desinformación</div>
+                    <div class="stat-label" data-translate="stat-misinformation">Ha sido víctima de desinformación</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">78%</div>
-                    <div class="stat-label">Comparte sin verificar fuentes</div>
+                    <div class="stat-label" data-translate="stat-verification">Comparte sin verificar fuentes</div>
                 </div>
             </div>
         </div>
@@ -110,8 +116,8 @@
     <section id="guias" class="guides-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Guías por Red Social</h2>
-                <p class="section-subtitle">Aprende las mejores prácticas para cada plataforma</p>
+                <h2 class="section-title" data-translate="guides-title">Guías por Red Social</h2>
+                <p class="section-subtitle" data-translate="guides-subtitle">Aprende las mejores prácticas para cada plataforma</p>
             </div>
 
             <div class="guides-grid">
@@ -123,21 +129,21 @@
                     </div>
                     <div class="guide-content">
                         <div class="tips-section">
-                            <h4>✅ Buenas Prácticas</h4>
+                            <h4 data-translate="good-practices">✅ Buenas Prácticas</h4>
                             <ul>
-                                <li>Configurar privacidad en "Solo amigos"</li>
-                                <li>Verificar noticias antes de compartir</li>
-                                <li>Revisar etiquetas antes de publicar</li>
-                                <li>Usar autenticación de dos factores</li>
+                                <li data-translate="fb-privacy">Configurar privacidad en "Solo amigos"</li>
+                                <li data-translate="fb-verify">Verificar noticias antes de compartir</li>
+                                <li data-translate="fb-tags">Revisar etiquetas antes de publicar</li>
+                                <li data-translate="fb-2fa">Usar autenticación de dos factores</li>
                             </ul>
                         </div>
                         <div class="warnings-section">
-                            <h4>⚠️ Evita</h4>
+                            <h4 data-translate="avoid">⚠️ Evita</h4>
                             <ul>
-                                <li>Compartir información personal públicamente</li>
-                                <li>Aceptar solicitudes de desconocidos</li>
-                                <li>Publicar ubicación en tiempo real</li>
-                                <li>Participar en cadenas falsas</li>
+                                <li data-translate="fb-personal-info">Compartir información personal públicamente</li>
+                                <li data-translate="fb-strangers">Aceptar solicitudes de desconocidos</li>
+                                <li data-translate="fb-location">Publicar ubicación en tiempo real</li>
+                                <li data-translate="fb-chains">Participar en cadenas falsas</li>
                             </ul>
                         </div>
                     </div>
@@ -151,21 +157,21 @@
                     </div>
                     <div class="guide-content">
                         <div class="tips-section">
-                            <h4>✅ Buenas Prácticas</h4>
+                            <h4 data-translate="good-practices">✅ Buenas Prácticas</h4>
                             <ul>
-                                <li>Mantener cuenta privada</li>
-                                <li>Cuidar la imagen personal</li>
-                                <li>Reportar perfiles falsos</li>
-                                <li>Bloquear comentarios ofensivos</li>
+                                <li data-translate="ig-private">Mantener cuenta privada</li>
+                                <li data-translate="ig-image">Cuidar la imagen personal</li>
+                                <li data-translate="ig-report">Reportar perfiles falsos</li>
+                                <li data-translate="ig-block">Bloquear comentarios ofensivos</li>
                             </ul>
                         </div>
                         <div class="warnings-section">
-                            <h4>⚠️ Evita</h4>
+                            <h4 data-translate="avoid">⚠️ Evita</h4>
                             <ul>
-                                <li>Seguir a desconocidos</li>
-                                <li>Compartir fotos comprometedoras</li>
-                                <li>Revelar ubicaciones frecuentes</li>
-                                <li>Compararse constantemente</li>
+                                <li data-translate="ig-strangers">Seguir a desconocidos</li>
+                                <li data-translate="ig-photos">Compartir fotos comprometedoras</li>
+                                <li data-translate="ig-locations">Revelar ubicaciones frecuentes</li>
+                                <li data-translate="ig-compare">Compararse constantemente</li>
                             </ul>
                         </div>
                     </div>
@@ -179,21 +185,21 @@
                     </div>
                     <div class="guide-content">
                         <div class="tips-section">
-                            <h4>✅ Buenas Prácticas</h4>
+                            <h4 data-translate="good-practices">✅ Buenas Prácticas</h4>
                             <ul>
-                                <li>Activar verificación en dos pasos</li>
-                                <li>Configurar privacidad de "Última vez"</li>
-                                <li>Verificar noticias antes de reenviar</li>
-                                <li>Reportar números sospechosos</li>
+                                <li data-translate="wa-2fa">Activar verificación en dos pasos</li>
+                                <li data-translate="wa-privacy">Configurar privacidad de "Última vez"</li>
+                                <li data-translate="wa-verify">Verificar noticias antes de reenviar</li>
+                                <li data-translate="wa-report">Reportar números sospechosos</li>
                             </ul>
                         </div>
                         <div class="warnings-section">
-                            <h4>⚠️ Evita</h4>
+                            <h4 data-translate="avoid">⚠️ Evita</h4>
                             <ul>
-                                <li>Reenviar cadenas sin verificar</li>
-                                <li>Compartir códigos de verificación</li>
-                                <li>Enviar dinero a desconocidos</li>
-                                <li>Unirse a grupos sospechosos</li>
+                                <li data-translate="wa-chains">Reenviar cadenas sin verificar</li>
+                                <li data-translate="wa-codes">Compartir códigos de verificación</li>
+                                <li data-translate="wa-money">Enviar dinero a desconocidos</li>
+                                <li data-translate="wa-groups">Unirse a grupos sospechosos</li>
                             </ul>
                         </div>
                     </div>
@@ -207,21 +213,21 @@
                     </div>
                     <div class="guide-content">
                         <div class="tips-section">
-                            <h4>✅ Buenas Prácticas</h4>
+                            <h4 data-translate="good-practices">✅ Buenas Prácticas</h4>
                             <ul>
-                                <li>Supervisar a menores de edad</li>
-                                <li>Limitar tiempo de uso</li>
-                                <li>Reportar contenido inapropiado</li>
-                                <li>Promover contenido positivo</li>
+                                <li data-translate="tt-supervise">Supervisar a menores de edad</li>
+                                <li data-translate="tt-time">Limitar tiempo de uso</li>
+                                <li data-translate="tt-report">Reportar contenido inapropiado</li>
+                                <li data-translate="tt-positive">Promover contenido positivo</li>
                             </ul>
                         </div>
                         <div class="warnings-section">
-                            <h4>⚠️ Evita</h4>
+                            <h4 data-translate="avoid">⚠️ Evita</h4>
                             <ul>
-                                <li>Participar en retos peligrosos</li>
-                                <li>Imitar comportamientos riesgosos</li>
-                                <li>Compartir información personal</li>
-                                <li>Seguir tendencias dañinas</li>
+                                <li data-translate="tt-challenges">Participar en retos peligrosos</li>
+                                <li data-translate="tt-imitate">Imitar comportamientos riesgosos</li>
+                                <li data-translate="tt-personal">Compartir información personal</li>
+                                <li data-translate="tt-trends">Seguir tendencias dañinas</li>
                             </ul>
                         </div>
                     </div>
@@ -234,40 +240,40 @@
     <section id="consejos" class="tips-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Consejos Generales</h2>
-                <p class="section-subtitle">Principios fundamentales para un uso responsable</p>
+                <h2 class="section-title" data-translate="tips-title">Consejos Generales</h2>
+                <p class="section-subtitle" data-translate="tips-subtitle">Principios fundamentales para un uso responsable</p>
             </div>
 
             <div class="tips-grid">
                 <div class="tip-card">
                     <div class="tip-icon">🔐</div>
-                    <h3>Privacidad</h3>
-                    <p>Configura siempre la privacidad de tus cuentas. Revisa quién puede ver tu contenido y información personal.</p>
+                    <h3 data-translate="tip-privacy-title">Privacidad</h3>
+                    <p data-translate="tip-privacy-desc">Configura siempre la privacidad de tus cuentas. Revisa quién puede ver tu contenido y información personal.</p>
                 </div>
                 <div class="tip-card">
                     <div class="tip-icon">✅</div>
-                    <h3>Verificación</h3>
-                    <p>Siempre verifica la información antes de compartir. Consulta fuentes oficiales y fidedignas.</p>
+                    <h3 data-translate="tip-verification-title">Verificación</h3>
+                    <p data-translate="tip-verification-desc">Siempre verifica la información antes de compartir. Consulta fuentes oficiales y fidedignas.</p>
                 </div>
                 <div class="tip-card">
                     <div class="tip-icon">👥</div>
-                    <h3>Respeto</h3>
-                    <p>Trata a otros con respeto. Evita comentarios ofensivos, discriminatorios o que puedan herir.</p>
+                    <h3 data-translate="tip-respect-title">Respeto</h3>
+                    <p data-translate="tip-respect-desc">Trata a otros con respeto. Evita comentarios ofensivos, discriminatorios o que puedan herir.</p>
                 </div>
                 <div class="tip-card">
                     <div class="tip-icon">⏰</div>
-                    <h3>Tiempo</h3>
-                    <p>Controla el tiempo que pasas en redes sociales. Establece límites saludables para tu bienestar.</p>
+                    <h3 data-translate="tip-time-title">Tiempo</h3>
+                    <p data-translate="tip-time-desc">Controla el tiempo que pasas en redes sociales. Establece límites saludables para tu bienestar.</p>
                 </div>
                 <div class="tip-card">
                     <div class="tip-icon">🛡️</div>
-                    <h3>Seguridad</h3>
-                    <p>Protege tus contraseñas y datos personales. Usa autenticación de dos factores cuando sea posible.</p>
+                    <h3 data-translate="tip-security-title">Seguridad</h3>
+                    <p data-translate="tip-security-desc">Protege tus contraseñas y datos personales. Usa autenticación de dos factores cuando sea posible.</p>
                 </div>
                 <div class="tip-card">
                     <div class="tip-icon">🧠</div>
-                    <h3>Pensamiento Crítico</h3>
-                    <p>Desarrolla pensamiento crítico. No creas todo lo que ves, analiza y cuestiona la información.</p>
+                    <h3 data-translate="tip-critical-title">Pensamiento Crítico</h3>
+                    <p data-translate="tip-critical-desc">Desarrolla pensamiento crítico. No creas todo lo que ves, analiza y cuestiona la información.</p>
                 </div>
             </div>
         </div>
@@ -277,28 +283,28 @@
     <section id="recursos" class="resources-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Recursos Útiles</h2>
-                <p class="section-subtitle">Herramientas y enlaces de ayuda</p>
+                <h2 class="section-title" data-translate="resources-title">Recursos Útiles</h2>
+                <p class="section-subtitle" data-translate="resources-subtitle">Herramientas y enlaces de ayuda</p>
             </div>
 
             <div class="resources-grid">
                 <div class="resource-card">
                     <div class="resource-icon">📚</div>
-                    <h3>Guías Educativas</h3>
-                    <p>Materiales educativos sobre seguridad digital y uso responsable de tecnología.</p>
-                    <a href="#" class="resource-link">Ver recursos →</a>
+                    <h3 data-translate="resource-guides-title">Guías Educativas</h3>
+                    <p data-translate="resource-guides-desc">Materiales educativos sobre seguridad digital y uso responsable de tecnología.</p>
+                    <a href="#" class="resource-link" data-translate="resource-guides-link">Ver recursos →</a>
                 </div>
                 <div class="resource-card">
                     <div class="resource-icon">🔍</div>
-                    <h3>Verificadores de Hechos</h3>
-                    <p>Herramientas para verificar la veracidad de noticias e información compartida.</p>
-                    <a href="#" class="resource-link">Verificar información →</a>
+                    <h3 data-translate="resource-verifiers-title">Verificadores de Hechos</h3>
+                    <p data-translate="resource-verifiers-desc">Herramientas para verificar la veracidad de noticias e información compartida.</p>
+                    <a href="#" class="resource-link" data-translate="resource-verifiers-link">Verificar información →</a>
                 </div>
                 <div class="resource-card">
                     <div class="resource-icon">🆘</div>
-                    <h3>Ayuda y Soporte</h3>
-                    <p>Canales de ayuda en caso de ciberacoso, estafas o problemas de seguridad.</p>
-                    <a href="#" class="resource-link">Buscar ayuda →</a>
+                    <h3 data-translate="resource-help-title">Ayuda y Soporte</h3>
+                    <p data-translate="resource-help-desc">Canales de ayuda en caso de ciberacoso, estafas o problemas de seguridad.</p>
+                    <a href="#" class="resource-link" data-translate="resource-help-link">Buscar ayuda →</a>
                 </div>
             </div>
         </div>
@@ -309,33 +315,34 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Redes Responsables</h3>
-                    <p>Promoviendo el uso seguro y responsable de las redes sociales para toda la comunidad.</p>
+                    <h3 data-translate="footer-brand">Redes Responsables</h3>
+                    <p data-translate="footer-desc">Promoviendo el uso seguro y responsable de las redes sociales para toda la comunidad.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Enlaces Útiles</h4>
+                    <h4 data-translate="footer-links-title">Enlaces Útiles</h4>
                     <ul class="footer-links">
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#guias">Guías</a></li>
-                        <li><a href="#consejos">Consejos</a></li>
-                        <li><a href="#recursos">Recursos</a></li>
+                        <li><a href="#inicio" data-translate="nav-inicio">Inicio</a></li>
+                        <li><a href="#guias" data-translate="nav-guias">Guías</a></li>
+                        <li><a href="#consejos" data-translate="nav-consejos">Consejos</a></li>
+                        <li><a href="#recursos" data-translate="nav-recursos">Recursos</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contacto de Emergencia</h4>
+                    <h4 data-translate="footer-emergency-title">Contacto de Emergencia</h4>
                     <div class="emergency-contacts">
-                        <p>🚔 Policía: 101</p>
-                        <p>💻 Delitos Informáticos: 1800-DELITO</p>
-                        <p>🆘 Línea de Ayuda: 1800-TOLERANCIA</p>
+                        <p data-translate="emergency-police">🚔 Policía: 101</p>
+                        <p data-translate="emergency-cyber">💻 Delitos Informáticos: 1800-DELITO</p>
+                        <p data-translate="emergency-help">🆘 Línea de Ayuda: 1800-TOLERANCIA</p>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Redes Responsables. Creado para promover el uso seguro de redes sociales.</p>
+                <p data-translate="footer-copyright">&copy; 2025 Redes Responsables. Creado para promover el uso seguro de redes sociales.</p>
             </div>
         </div>
     </footer>
 
+    <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

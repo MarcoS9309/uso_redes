@@ -14,6 +14,7 @@
 const AppState = {
     isMenuOpen: false,
     isScrolling: false,
+    currentLanguage: 'es', // Default language
     animations: {
         progressBar: null,
         scrollAnimations: []
@@ -40,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         initNetworkCardInteractions();
         initKeyboardNavigation();
         initLazyLoading();
+        initLanguageToggle(); // Initialize language functionality
         detectBrowser();
         
         console.log('🌐 Redes Responsables v' + AppState.version + ' - Página cargada correctamente');
@@ -805,8 +807,141 @@ window.RedesSociales = {
     getAppState: () => ({ ...AppState }),
     
     // Método para cerrar menú móvil externamente
-    closeMobileMenu: () => closeMobileMenu()
+    closeMobileMenu: () => closeMobileMenu(),
+    
+    // Métodos de traducción
+    switchLanguage: (lang) => switchLanguage(lang),
+    getCurrentLanguage: () => AppState.currentLanguage
 };
+
+/**
+ * Inicializa la funcionalidad de cambio de idioma
+ */
+function initLanguageToggle() {
+    try {
+        // Cargar idioma guardado desde localStorage
+        const savedLanguage = localStorage.getItem('preferred-language') || 'es';
+        AppState.currentLanguage = savedLanguage;
+        
+        // Aplicar idioma inicial
+        applyTranslations(savedLanguage);
+        
+        // Configurar botón de cambio de idioma
+        const languageToggle = document.getElementById('languageToggle');
+        if (languageToggle) {
+            languageToggle.addEventListener('click', function() {
+                const newLanguage = AppState.currentLanguage === 'es' ? 'qu' : 'es';
+                switchLanguage(newLanguage);
+            });
+        }
+        
+        console.log('✅ Funcionalidad de idiomas inicializada');
+    } catch (error) {
+        console.error('Error al inicializar idiomas:', error);
+        reportError('Language Toggle Error', error);
+    }
+}
+
+/**
+ * Cambia el idioma de la aplicación
+ * @param {string} language - Código del idioma ('es' o 'qu')
+ */
+function switchLanguage(language) {
+    try {
+        if (!translations[language]) {
+            console.warn(`Idioma no soportado: ${language}`);
+            return;
+        }
+        
+        AppState.currentLanguage = language;
+        localStorage.setItem('preferred-language', language);
+        
+        // Aplicar traducciones
+        applyTranslations(language);
+        
+        // Actualizar botón de idioma
+        updateLanguageToggleButton(language);
+        
+        // Actualizar atributo lang del HTML
+        document.documentElement.lang = language === 'qu' ? 'qu' : 'es';
+        
+        console.log(`🌐 Idioma cambiado a: ${language.toUpperCase()}`);
+    } catch (error) {
+        console.error('Error al cambiar idioma:', error);
+        reportError('Language Switch Error', error);
+    }
+}
+
+/**
+ * Aplica las traducciones a todos los elementos con data-translate
+ * @param {string} language - Código del idioma
+ */
+function applyTranslations(language) {
+    try {
+        const elementsToTranslate = document.querySelectorAll('[data-translate]');
+        const translationSet = translations[language];
+        
+        if (!translationSet) {
+            console.warn(`No hay traducciones disponibles para: ${language}`);
+            return;
+        }
+        
+        elementsToTranslate.forEach(element => {
+            const key = element.getAttribute('data-translate');
+            const translation = translationSet[key];
+            
+            if (translation) {
+                // Aplicar traducción preservando HTML interno si es necesario
+                if (element.innerHTML.includes('<')) {
+                    // Si contiene HTML, solo actualizar el texto principal
+                    const textNode = Array.from(element.childNodes).find(node => 
+                        node.nodeType === Node.TEXT_NODE && node.textContent.trim()
+                    );
+                    if (textNode) {
+                        textNode.textContent = translation;
+                    } else {
+                        element.innerHTML = translation;
+                    }
+                } else {
+                    element.textContent = translation;
+                }
+            } else {
+                console.warn(`Traducción no encontrada para clave: ${key} en idioma: ${language}`);
+            }
+        });
+        
+        console.log(`🔄 Traducciones aplicadas para ${language.toUpperCase()}`);
+    } catch (error) {
+        console.error('Error al aplicar traducciones:', error);
+        reportError('Translation Apply Error', error);
+    }
+}
+
+/**
+ * Actualiza el botón de cambio de idioma
+ * @param {string} language - Código del idioma actual
+ */
+function updateLanguageToggleButton(language) {
+    try {
+        const languageToggle = document.getElementById('languageToggle');
+        const langText = languageToggle?.querySelector('.lang-text');
+        const langFlag = languageToggle?.querySelector('.lang-flag');
+        
+        if (langText && langFlag) {
+            if (language === 'qu') {
+                langText.textContent = 'QU';
+                langFlag.textContent = '🏴';
+                languageToggle.title = 'Español rimayman tikray / Cambiar a español';
+            } else {
+                langText.textContent = 'ES';
+                langFlag.textContent = '🏴';
+                languageToggle.title = 'Cambiar idioma / Rimay tikray';
+            }
+        }
+    } catch (error) {
+        console.error('Error al actualizar botón de idioma:', error);
+    }
+}
 
 // Congelar el objeto para prevenir modificaciones
 Object.freeze(window.RedesSociales);

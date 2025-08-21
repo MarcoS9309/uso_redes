@@ -115,12 +115,46 @@ Este repositorio contiene un proyecto de código diseñado para la construcción
 - **Delitos Informáticos**: 1800-DELITO
 - **Línea de Tolerancia**: 1800-TOLERANCIA
 
-## 💻 Cómo Usar
+## 💻 Instalación y Uso
+
+### 🚀 Inicio Rápido
+
+1. **Clona el repositorio:**
+   ```bash
+   git clone https://github.com/MarcoS9309/uso_redes.git
+   cd uso_redes
+   ```
+
+2. **Ejecuta localmente:**
+   ```bash
+   # Opción 1: Servidor simple con Python
+   python -m http.server 8000
+   
+   # Opción 2: Servidor simple con Node.js
+   npx serve .
+   
+   # Opción 3: Live Server (VS Code extension)
+   # Instala Live Server y haz clic derecho -> "Open with Live Server"
+   ```
+
+3. **Abre en tu navegador:**
+   ```
+   http://localhost:8000
+   ```
+
+### 📱 Uso de la Aplicación
 
 1. **Abrir la página**: Abre `index.html` en tu navegador
 2. **Navegar**: Usa el menú superior para ir a diferentes secciones
 3. **Interactuar**: Haz clic en las tarjetas para ver efectos
 4. **Móvil**: Usa el menú hamburguesa en dispositivos pequeños
+
+### ⚙️ Requisitos del Sistema
+
+- **Navegadores compatibles**: Chrome 70+, Firefox 65+, Safari 12+, Edge 79+
+- **JavaScript**: Habilitado
+- **Resolución mínima**: 320px de ancho
+- **Conexión**: No requiere internet (excepto para fuentes de Google)
 
 ## 🌍 Accesibilidad
 
@@ -145,14 +179,40 @@ Este proyecto está diseñado para ser educativo y comunitario. Las sugerencias 
 
 ### Cómo Contribuir
 
-1. Identifica áreas de mejora
-2. Propón cambios en el contenido
-3. Sugiere nuevas funcionalidades
-4. Reporta errores o problemas
+Para contribuir al proyecto, por favor revisa nuestras [Guías de Contribución](CONTRIBUTING.md) y [Código de Conducta](CODE_OF_CONDUCT.md).
+
+#### Pasos Rápidos:
+1. Fork el repositorio
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
+
+#### Tipos de Contribuciones Bienvenidas:
+- 🐛 Reportes de errores
+- 💡 Sugerencias de mejoras
+- 📝 Mejoras en documentación
+- 🌐 Traducciones
+- 🎨 Mejoras en diseño
+- 🔧 Optimizaciones de código
 
 ## 📄 Licencia
 
-Este proyecto es de uso educativo y comunitario. Se permite el uso y modificación para fines educativos.
+Este proyecto está licenciado bajo la [Licencia MIT](LICENSE) - consulta el archivo LICENSE para más detalles.
+
+### Uso Permitido
+- ✅ Uso comercial
+- ✅ Modificación
+- ✅ Distribución
+- ✅ Uso privado
+
+### Responsabilidades
+- ⚖️ Incluir aviso de licencia y copyright
+- ⚖️ Incluir aviso de cambios realizados
+
+### Limitaciones
+- ❌ Sin garantías
+- ❌ Sin responsabilidad del autor
 
 ## 👥 Créditos
 
